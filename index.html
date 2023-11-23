@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <table border="3" height="40%" width="30%" align="center" style="border-collapse:collapse; text-align:center;">
+        <tr>
+            <th colspan="4">Calculator</th>
+        </tr>
+        <tr>
+            <td colspan="2">First number :</td>
+            <td colspan="2">
+                <input type="text" id="first_number">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">Second number :</td>
+            <td colspan="2">
+                <input type="text" id="second_number">
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Operations</th>
+        </tr>
+        <tr>
+            <th><input type="button" id="Add" value="+" onclick="addNumbers()"></th>
+            <th><input type="button" id="Sub" value="-" onclick="subtractNumbers()"></th>
+            <th><input type="button" id="Mul" value="*" onclick="multiplyNumbers()"></th>
+            <th><input type="button" id="Div" value="/" onclick="divideNumbers()"></th>
+        </tr>
+        <tr>
+            <th colspan="4">
+                <input type="button" value="Clear" onclick="clearInput()">
+            </th>
+        </tr>
+        <tr>
+            <th colspan="4"><p id="res">Show Result</p></th>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
